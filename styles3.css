@@ -1,0 +1,86 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background: url('bg.png');
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+}
+
+.container {
+    position: relative;
+    height: 100vh; /* Kontainer memenuhi tinggi layar */
+    width: 100vw;
+    display: flex;
+    flex-direction: column; /* Menempatkan gambar secara vertikal (atas-bawah) */
+    justify-content: center;
+    align-items: center;
+}
+
+.gambar {
+    width: 70vw; /* Ukuran gambar */
+    opacity: 0; /* Awalnya tidak terlihat */
+    transition: opacity 1s ease, transform 1s ease; /* Transisi untuk opacity dan transform */
+    margin: 20px 0; /* Jarak antar gambar */
+}
+
+/* Animasi untuk gambar akad dan resepsi */
+#akad {
+    animation: munculDariKiri 1s forwards; /* Akad muncul dari kiri */
+}
+
+#resepsi {
+    animation: munculDariKanan 1s forwards; /* Resepsi muncul dari kanan */
+}
+
+/* Akad muncul dari kiri */
+@keyframes munculDariKiri {
+    0% {
+        transform: translateX(-100%); /* Mulai dari kiri */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0); /* Ke tengah */
+        opacity: 1;
+    }
+}
+
+/* Resepsi muncul dari kanan */
+@keyframes munculDariKanan {
+    0% {
+        transform: translateX(100%); /* Mulai dari kanan */
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0); /* Ke tengah */
+        opacity: 1;
+    }
+}
+
+/* Akad menghilang ke kanan */
+@keyframes menghilangKeKanan {
+    0% {
+        transform: translateX(0); /* Dari tengah */
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%); /* Ke luar layar kanan */
+        opacity: 0;
+    }
+}
+
+/* Resepsi menghilang ke kiri */
+@keyframes menghilangKeKiri {
+    0% {
+        transform: translateX(0); /* Dari tengah */
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100%); /* Ke luar layar kiri */
+        opacity: 0;
+    }
+}
