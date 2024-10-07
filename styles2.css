@@ -13,106 +13,105 @@ body, html {
 
 .container {
     position: relative;
-    height: 100vh; /* Kontainer memenuhi tinggi layar */
+    height: 100vh;
     width: 100vw;
     text-align: center;
 }
 
 .p1 {
-    font-family: 'Parisienne', cursive; /* Font untuk p1 */
-    font-size: 2em; /* Ukuran font untuk p1 */
+    font-family: 'Parisienne', cursive; 
+    font-size: 2em;
     color: #333;
-    opacity: 0; /* Awalnya tidak terlihat */
-    animation: memudar 1s forwards; /* Menambahkan animasi memudar */
-    animation-delay: 1s; /* Delay untuk muncul p1 */
+    opacity: 0;
+    animation: memudar 1s forwards;
+    animation-delay: 1s;
 }
 
 .p2, .p3 {
-    font-family: 'Poppins', sans-serif; /* Font untuk p2 dan p3 */
-    font-size: 1.2em; /* Ukuran font untuk p2 dan p3 */
-    opacity: 0; /* Awalnya tidak terlihat */
-    animation-fill-mode: forwards; /* Tetap di posisi akhir setelah animasi */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2em;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .p2 {
-    margin-top: 20px; /* Jarak antara p1 dan p2 */
-    animation: memudar 1s forwards; /* Animasi untuk p2 */
-    animation-delay: 3s; /* Delay untuk muncul p2 setelah p1 */
+    margin-top: 20px; 
+    animation: memudar 1s forwards; 
+    animation-delay: 3s;
 }
 
 .p3 {
-    margin-top: 10px; /* Jarak antara p2 dan p3 */
-    animation: memudar 1s forwards; /* Animasi untuk p3 */
-    animation-delay: 5s; /* Delay untuk muncul p3 setelah p2 */
+    margin-top: 10px; 
+    animation: memudar 1s forwards; 
+    animation-delay: 5s; 
 }
 
-/* Pengaturan untuk gambar */
+
 .gambar {
-    width: 70vw; /* Ukuran gambar */
-    display: none; /* Sembunyikan gambar awal */
-    margin: 20px auto; /* Margin atas dan bawah */
-    opacity: 0; /* Awalnya tidak terlihat */
-    transition: opacity 0.5s ease; /* Transisi untuk gambar */
+    width: 70vw; 
+    display: none;
+    margin: 20px auto;
+    opacity: 0; 
+    transition: opacity 0.5s ease;
 }
 
-/* Animasi memudar */
+
 @keyframes memudar {
     0% {
-        opacity: 0; /* Awalnya tidak terlihat */
+        opacity: 0; 
     }
     100% {
-        opacity: 1; /* Menjadi terlihat */
+        opacity: 1; 
     }
 }
 
-/* Animasi muncul untuk gambar */
+
 #puti {
-    animation: munculDariKanan 0.5s forwards; /* Animasi untuk gambar puti */
+    animation: munculDariKanan 0.5s forwards; 
 }
 
-/* Gambar cincin dengan animasi membesar */
+
 #cincin {
-    animation: membesar 0.5s forwards; /* Animasi untuk cincin */
-    width: 30vw; /* Ukuran cincin */
+    animation: membesar 0.5s forwards; 
+    width: 30vw; 
 }
 
-/* Gambar fauzan dengan animasi muncul dari kiri */
+
 #fauzan {
-    animation: munculDariKiri 0.5s forwards; /* Animasi untuk gambar fauzan */
+    animation: munculDariKiri 0.5s forwards; 
 }
 
-/* Animasi muncul dari kanan */
+
 @keyframes munculDariKanan {
     0% {
-        transform: translateX(100%); /* Mulai dari kanan */
-        opacity: 0; /* Awalnya tidak terlihat */
+        transform: translateX(100%); 
+        opacity: 0; 
     }
     100% {
-        transform: translateX(0); /* Kembali ke posisi normal */
-        opacity: 1; /* Menjadi terlihat */
+        transform: translateX(0); 
+        opacity: 1;
     }
 }
 
-/* Animasi untuk cincin membesar */
+
 @keyframes membesar {
     0% {
-        transform: scale(0); /* Mulai dari skala 0 */
-        opacity: 0; /* Awalnya tidak terlihat */
+        transform: scale(0); 
+        opacity: 0; 
     }
     100% {
-        transform: scale(1); /* Membesar ke ukuran normal */
-        opacity: 1; /* Menjadi terlihat */
+        transform: scale(1); 
+        opacity: 1; 
     }
 }
 
-/* Animasi muncul dari kiri */
+
 @keyframes munculDariKiri {
     0% {
-        transform: translateX(-100%); /* Mulai dari kiri */
-        opacity: 0; /* Awalnya tidak terlihat */
+        transform: translateX(-100%); 
+        opacity: 0; 
     }
     100% {
-        transform: translateX(0); /* Kembali ke posisi normal */
-        opacity: 1; /* Menjadi terlihat */
-    }
+        transform: translateX(0); 
+        opacity: 1;     }
 }
