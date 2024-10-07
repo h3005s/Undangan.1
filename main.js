@@ -3,6 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const tombol = document.querySelector(".btn");
 
     gambar.addEventListener("animationend", function() {
-        tombol.style.display = "block"; // Munculkan tombol setelah animasi gambar selesai
+        tombol.style.display = "block";
     });
 });
