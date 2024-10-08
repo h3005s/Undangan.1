@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('bg1.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+.bottom-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.animated-image {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease-out, transform 1s ease-out; 
+}
+
+.animated-image.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+#gambar1 {
+    width: 400px; 
+}
+
+#gambar2 {
+    width: 350px;
+}
+
+#gambar3 {
+    width: 90px; 
+}
+
+#gambar4 {
+    width: 350px; 
+}
