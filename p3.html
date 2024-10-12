@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page3</title>
+    <style>
+        body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('bg1.png');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-attachment: fixed; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+}
+
+
+.animated-image {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease-out, transform 1s ease-out; 
+}
+
+.animated-image.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+#gambar1 {
+    width: 300px; 
+}
+
+#gambar2 {
+    width: 350px;
+}
+
+#gambar3 {
+    width: 350px; 
+}
+
+#gambar4 {
+    width: 400px; 
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="jadwal.png" alt="Gambar 1" class="animated-image" id="gambar1">
+        
+            <img src="akad.png" alt="Gambar 2" class="animated-image" id="gambar2">
+            <img src="resepsi.png" alt="Gambar 3" class="animated-image" id="gambar3">
+            <img src="ia.png" alt="Gambar 4" class="animated-image" id="gambar4">
+        
+    </div>
+
+    <script>
+        window.onload = function() {
+    const images = document.querySelectorAll('.animated-image');
+    images.forEach((img, index) => {
+        setTimeout(() => {
+            img.classList.add('show');
+        }, index * 500); 
+    });
+
+  
+    const totalDelay = (images.length * 500) + 1500;  
+
+    setTimeout(() => {
+        window.location.href = "p4.html";
+   }, totalDelay);
+};
+    </script>
+</body>
+</html>
