@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="l.png" alt="Undangan" class="animated-image" id="p1i1">
+        <div class="bottom-images">
+            <img src="g.png" alt="puti" class="animated-image" id="p1i2">
+            <img src="m.png" alt="&" class="animated-image" id="p1i3">
+            <img src="h.png" alt="Fauzan" class="animated-image" id="p1i4">
+        </div>
+    </div>
+
+    <script>
+        window.onload = function() {
+    const images = document.querySelectorAll('.animated-image');
+    images.forEach((img, index) => {
+        setTimeout(() => {
+            img.classList.add('show');
+        }, index * 500); 
+    });
+
+  
+    const totalDelay = (images.length * 500) + 2000;  
+
+    setTimeout(() => {
+        window.location.href = "p2.html";
+    }, totalDelay);
+};
+    </script>
+</body>
+</html>
