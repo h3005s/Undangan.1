@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  background: url('img/bg3');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: montserrat;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(82,214,255,0.4);
+  width: 1200px;
+  height: 800px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.page .opsi {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  gap: 10px;
+  height: 80%;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page .title {
+  color: rgb(255,255,255);
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 100;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  font-size: 2.5em;
+}
+button {
+  border: 2px solid #d08bff;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #000;
+  padding: 5px;
+  height: 70px;
+  width: 300px;
+  font-size: 1.8em;
+  font-family: montserrat;
+}
+button:hover {
+  box-shadow: 0 0 5px #ff00ff, 0 0 25px #ff00ff, 0 0 50px #ff00ff, 0 0 100px #ff00ff, 0 0 200px #ff00ff;
+        background: #ffffff;
+        color: #ff00ff;
+}
+@font-face {
+  font-family: montserrat;
+  src: url('font/montserrat');
+}
