@@ -31,7 +31,8 @@ body {
   height: 70%
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 .page .title {
   color: rgb(255,255,255);
