@@ -22,7 +22,8 @@ body {
   border-radius: 10px;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 .page .opsi {
   display: flex;
