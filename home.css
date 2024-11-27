@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: url('img/bg2');
+  background: url('bg2');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -64,5 +64,5 @@ button:hover {
 }
 @font-face {
   font-family: montserrat;
-  src: url('font/montserrat');
+  src: url('montserrat');
 }
